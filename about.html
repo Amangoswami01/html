@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(img/gym1.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        /* header tag :start  */
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            width: 76px;
+            top: 20px;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            width: 76px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            line-height: 19px;
+            font-size: 19px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            /*mid box ko center lane ke liye ye use kiya*/
+            width: 53%;
+            margin: 29px auto;
+
+            /* background-color: rgb(231, 231, 132); */
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 40px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .right .btn {
+            margin-top: -12px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            /*home or about ko ek line me lane ke liye use kiya */
+            font-size: 25px;
+            text-shadow: 1px 1px red;
+        }
+
+        .navbar li a {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            text-decoration: none;
+            /* home or about ke niche ki line htane ki liye  */
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: gray;
+            text-decoration: underline;
+            /*home ya about koi hover kr to us pr underline color change ho   */
+        }
+        .btn {
+
+margin: 0 6px;
+background-color: black;
+color: white;
+padding: 1px 6px;
+border: 2px solid gray;
+border-radius: 10px;
+font-size: 14px;
+cursor: pointer;
+text-shadow: 1px 1px red;
+}
+
+.btn:hover {
+
+color: gray;
+}
+
+        /* header tag closed */
+        .wallet {
+            margin-right: 16px;
+            cursor: pointer;
+        }
+
+        .blog-heading {
+            font-size: 32px;
+            line-height: 1.5;
+            font-style: italic;
+            font-weight: 700;
+            color: #e14444;
+            line-height: 46px;
+            width: 63%;
+            /* float: left; */
+            margin: auto;
+            display: block;
+        }
+
+        /* facebook and instagram  */
+        .blog-actions {
+            overflow: auto;
+            width: 63%;
+            margin: 15px auto;
+            display: block;
+        }
+
+        .blog-actions a img {
+            margin: 0 20px 0 5px;
+            vertical-align: middle;
+
+        }
+   
+        /* facebook and instagram  closed*/
+        h1 {
+            font-size: 2em;
+            margin: 0.67em 0;
+        }
+
+        * {
+            font-family: Poppins, sans-serif;
+        }
+
+
+        /* img tag  */
+        .hero-image {
+            width: 63%;
+            float: mid;
+            margin: 12px auto;
+            /* float: left; */
+            display: block;
+        }
+
+        img {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        img {
+            border-style: none;
+        }
+
+        /* h3 tag */
+        .blog-desc {
+            font-size: 16px;
+            font-weight: 400;
+            margin: 15px auto;
+            font-style: italic;
+            color: #d3d4d5;
+            width: 63%;
+            /* float: left; */
+            line-height: 36px;
+            display: block;
+        }
+
+        /* paragraph */
+        .danger-html {
+            width: 63%;
+            display: block;
+            margin: 4px auto;
+
+        }
+
+        .danger-html p {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 26px;
+            font-family: dinregular, sans-serif;
+            font-weight: 400;
+        }
+
+        .danger-html ul {
+            margin-top: 50px;
+            display: block;
+            width: 95%;
+            margin-right: 234px;
+            margin-left: 20px;
+            padding: initial;
+        }
+
+        .danger-html ul li {
+            padding: 3px;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 26px;
+            font-family: dinregular, sans-serif;
+            font-weight: 400;
+            color: white;
+        }
+
+        .section-container p {
+            margin: 20px 0 0px -2px;
+            color: #2c2c2c;
+        }
+
+        /* second img   */
+        .image-item {
+            width: 63%;
+            display: block;
+            margin: 4px auto;
+
+        }
+
+        img {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        /* big questions */
+        .section-heading {
+            display: block;
+            margin: -10px auto;
+            width: 63%;
+            color: gray;
+        }
+
+        .image-item1 {
+            display: block;
+            width: 63%;
+            margin: 12px auto;
+            /* margin-left: auto; */
+            margin-left: 250px;
+            padding-bottom: 11px;
+        }
+
+        .para1 {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 26px;
+            font-family: dinregular, sans-serif;
+            font-weight: 400;
+            color: white !important;
+            /* font-family: dinregular, sans-serif; */
+        }
+
+        .SimilarArticleCard-Container {
+            box-shadow: rgba(44, 44, 44, 0.1) 0px 4px 7px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .SimilarArticleCard-Container img {
+            width: 63%;
+            display: block;
+            margin: 12px auto;
+        }
+
+        img {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        img {
+            border-style: none;
+        }
+
+        .SimilarArticleCard-Container .heading,
+        .date {
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 16px;
+            color: rgb(254, 126, 16);
+            font-style: italic;
+            height: 30px;
+            overflow: hidden;
+            display: block;
+            margin: 12px auto;
+            width: 63%;
+        }
+
+        /* footer tag start  */
+        .desk-footer__right {
+            margin-left: 10%;
+        }
+
+        .desk-footer__footer p {
+            color: gray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .desk-footer__footer hr {
+            margin-right: 70px;
+            margin-left: -50px;
+            margin-bottom: -10px;
+        }
+
+        /* footer tag closed  */
+    </style>
+
+<body>
+    <header class="head">
+        <!-- Left Box for Logo -->
+        <div class="left">
+            <img src="img/logo1png.jpg" alt="">
+            <div>Goswami Fitness</div>
+        </div>
+
+        <!-- Mid Box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="about.html" class="active">About us</a></li>
+                <li> <a href="fitness.html">Fitness calculator</a></li>
+                <li> <a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Box for Buttons  -->
+        <div class="right">
+            <a class="wallet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22.727" height="21.103" viewBox="0 0 22.727 21.103">
+                    <g id="Group_88226" data-name="Group 88226" transform="translate(18732 -8829)">
+                        <path id="Path_100856" data-name="Path 100856"
+                            d="M455.812,299.123a.812.812,0,1,0-.812-.812A.812.812,0,0,0,455.812,299.123Z"
+                            transform="translate(-19170.768 8542.863)" fill="#fff"></path>
+                        <path id="Path_100857" data-name="Path 100857"
+                            d="M123.668,55.747v-.812a2.435,2.435,0,0,0-2.435-2.435h-13.8A2.435,2.435,0,0,0,105,54.935V71.168a2.435,2.435,0,0,0,2.435,2.435H124.48a2.435,2.435,0,0,0,2.435-2.435V67.3a2.43,2.43,0,0,0,.812-1.815V63.863a2.43,2.43,0,0,0-.812-1.815V58.182a2.435,2.435,0,0,0-2.435-2.435Zm-17.045.139a2.427,2.427,0,0,1,.812-.139h14.61v-.812a.812.812,0,0,0-.812-.812h-13.8a.812.812,0,0,0-.812.812Zm12.175,8.79a3.247,3.247,0,0,0,3.247,3.247h3.247v3.247a.812.812,0,0,1-.812.812H107.435a.812.812,0,0,1-.812-.812V58.182a.812.812,0,0,1,.812-.812H124.48a.812.812,0,0,1,.812.812v3.247h-3.247A3.247,3.247,0,0,0,118.8,64.675Zm3.247-1.623a1.623,1.623,0,1,0,0,3.247h3.247a.812.812,0,0,0,.812-.812V63.863a.812.812,0,0,0-.812-.812Z"
+                            transform="translate(-18837 8776.5)" fill="#fff" fill-rule="evenodd"></path>
+                    </g>
+                </svg>
+            </a>
+            <button class="btn">Call us now</button>
+            <button class="btn">E-mail us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="blog-heading"> Everything You Need to Know About Fitness</h1>
+        <!-- facebook and instagram start -->
+        <div class="blog-actions"><a target="popup"
+                href="https://www.facebook.com/sharer/sharer.php?u=https://www.muscleblaze.com/articles/Guide/everything-you-need-to-know-about-fitness/10453"><img
+                    src="https://img10.hkrtcdn.com/mb/static/media/common/fb.svg" alt="fb.svg"></a><a
+                href="https://www.instagram.com"
+                target="popup" data-show-count="false"><img
+                    src="https://img10.hkrtcdn.com/mb/static/media/common/twitter.svg" alt="twitter.svg"></a>
+        </div>
+        <!-- facebook and instagram  closed -->
+        <img class="hero-image" src="img/Fit.jpg"
+            alt="https://www.healthkart.com/mbconnect/sites/default/files/styles/hero_web/public/Everything-You-Need-to-Know-About-Fitness.jpg">
+        <h3 class="blog-desc">Are You Worried About Your Fitness. Here You Can Know Everything About Fitness & Fitness
+            Activates & Exercise.</h3>
+        <div class="danger-html">
+            <p>Here is everything you need to know about fitness at one go. The subject is extremely popular these days.
+                As a matter of fact, it's been one of the hottest topics throughout the entire modern era. In there you
+                will learn about the basics of fitness and how it can help you lead a <a
+                    href="https://www.muscleblaze.com/articles/Exercise/10-types-of-workouts-to-improve-overall-health-and-fitness/10419"><span
+                        style="color:#FF0000"><em>healthy lifestyle</em></span></a>.</p>
+        </div>
+        <!-- second img  -->
+        <div class="images-wrapper"><img class="image-item" src="img/big.jpg" alt="Measure Fitness">
+            <div class="section-heading">
+                <h4>The Big Question Is: How Do We Define And Measure Fitness?</h4>
+            </div>
+        </div>
+        <div class="danger-html">
+            <ul>
+                <li>When we talk about fitness, we are talking about the ability of your body to burn calories and lose
+                    fat. It also encompasses a lot of other factors such as stamina, endurance, strength, flexibility,
+                    and coordination. In this article you will learn exactly everything you need to know about fitness.
+                </li>
+                <li>When you build muscle, you burn more calories than when you do not build muscle. If you want to lose
+                    fat, you need to reduce the amount of calories you consume, while increasing the ones that you burn
+                    through exercise. You need to build muscle and reduce fat simultaneously. Here's how.</li>
+                <li>There is no such thing as the ultimate fitness machine. All that matters is that you achieve your
+                    fitness goals. If you want to know how to lose weight and build muscle or the <a
+                        href="https://www.muscleblaze.com/articles/Exercise/10-bodybuilding-workout-routine-for-muscular-physique/10415"><span
+                            style="color:#FF0000"><em>best exercise to lose weight</em></span></a><strong>,
+                    </strong>workouts to lose belly fat, then you should know that there is only one efficient way to do
+                    so. That means you need to find a routine that suits your lifestyle. You cannot perform a bunch of
+                    exercises in a short period of time without losing any effect.</li>
+            </ul>
+        </div>
+        <!-- fitness tag  -->
+        <div class="section-container">
+            <div class="images-wrapper"><img class="image-item1" src="img/Fitness.jpg" alt="Fitness Program"></div>
+            <div class="section-heading"> <b>Fitness Program </b> </div>
+            <div class="danger-html">
+                <ul>
+                    <li>A fitness program has two aspects. The first one is the diet. This is the nutrition part. You
+                        need to understand that food works best with your body type. Some work for some people, while
+                        others may not have any effect on them. Therefore, you need to be <em><a
+                                href="https://www.muscleblaze.com/articles/Diet/best-diet-for-mens-every-age---fitness--weight-loss-diet/10407"><span
+                                    style="color:#FF0000">very careful when choosing a diet plan</span></a></em>.</li>
+                    <li>The second aspect of fitness is increasing the amount of muscle you have. To lose weight you
+                        need to exercise. To increase the size of your muscles you use strength training. It takes a lot
+                        of dedication and determination to put in the hard work it takes to gain muscle weight and build
+                        muscle. You also need to be extremely disciplined to stick to the fitness program for the long
+                        term.</li>
+                    <li>You can find fitness videos and books online or can consult a fitness expert. Make sure you go
+                        for an expert in the field. These fitness videos and books will provide you with all of the
+                        information you need to start seeing results within a few weeks. They will also show you how to
+                        build more muscle than you already have.</li>
+                    <li>A fitness program can be anything you want it to be. It is up to you how disciplined you are and
+                        how much effort you are willing to put into it. When you take the time and do the work it takes
+                        to succeed with a fitness program you will see results. Therefore, everything you need to know
+                        about fitness can be found in a fitness program.</li>
+                    <li>The <a
+                            href="https://www.muscleblaze.com/articles/Exercise/summer-body-workouts-for-women/10435"><span
+                                style="color:#FF0000"><em>bodyweight workout</em></span></a><strong> </strong>is a great
+                        way to enjoy fitness in a very natural way. We have seen many people who are very good at weight
+                        lifting but when it comes to lifting their body they struggle a lot. Bodyweight is really very
+                        effective. While doing gym, your body becomes stiff and loses flexibility. But bodyweight
+                        exercise helps you to stay flexible and strong.&nbsp;</li>
+                    <li>Nutrients are very important to support your training. Protein is very good to get your muscles
+                        recovered and better build. So, have it from the various sources like eggs, milk, peas, whole
+                        grains, and clothes. But sometimes it is very hard to get them from the regular diet. So, the
+                        right time to turn to <a
+                            href="https://www.muscleblaze.com/categories/proteins?navKey=CL-1703"><span
+                                style="color:#FF0000"><em>whey protein</em></span></a>. One of the best protein
+                        supplements in the market that takes care of all your muscle nutrients needs.&nbsp;</li>
+                    <li>Always aware of the fitness goal you are up to. If you are on a weight loss journey, curate a
+                        particular exercise plan that only hits the goal. You can use fat cutter, protein, and fish oil,
+                        and other supplements to support the journey. But if you are muscle building or gaining, you
+                        need to use a <em><a href="https://www.muscleblaze.com/categories/gainers?navKey=CL-1708"><span
+                                    style="color:#FF0000">mass gainer</span></a></em> that consists of all the nutrients
+                        like protein, carbohydrates, fats, and vitamins in required amounts. But don’t forget to consume
+                        high calories natural foods like bananas, whole grains, starchy vegetables, potatoes, and others
+                        to increase the calories in your diet.&nbsp;</li>
+                    <li>Hydration plays an important role in overall health and wellness. But in bodybuilding it also
+                        plays a very important role as well. When you have good amounts of water in your body you will
+                        be safe from the digestion issues and side effects of the supplements. Along with that it helps
+                        to absorb the nutrients to the body and transport to different parts of the body through blood
+                        vessels. It is also responsible to transport the oxygen to different parts of the body. So, stay
+                        hydrated and stay healthy.&nbsp;</li>
+                    <li>Sound sleep is one of the most neglected phenomena that helps your fitness regime. No matter
+                        what you are following, you will get the better results with sound sleep. Eight hours sleep is
+                        quite important to live a healthy lifestyle but quality matters. Make sure that you are not
+                        doing many things like caffeine intake before going to sleep or drinking more water in the
+                        night, and others which are responsible for hindering your sleep.&nbsp;</li>
+                </ul>
+
+                <p class="para1">Fitness is a long term process that you have to continue for a long time. Though you
+                    can make a good
+                    looking body in 6 or 7 months, if you don’t continue the routine, you lose it soon. But if you work
+                    on fitness, you do many physical activities along with going to the gym and stay fit for a longer
+                    time. Even if you will not lose the body, what you have achieved with your dedication and hard work.
+                    Fitness is a journey that you can’t complete without the right nutrients. <a
+                        href="https://www.muscleblaze.com/categories/fish-oil?navKey=CL-4909"><span
+                            style="color:#FF0000"><em>Supplements like fish oils</em></span></a><strong> </strong>help
+                    you to get fitness in a very natural way. Get training and supplements as a companion in your
+                    fitness journey.</p>
+            </div>
+        </div>
+        <div class="SimilarArticleCard-Container"><img src="img/10-big.jpg"
+                alt="https://www.healthkart.com/mbconnect/sites/default/files/styles/hero_web/public/10-Biggest-Fitness-Myths-of-All-Time.jpg">
+            <div class="content">
+                <div class="heading">10 Biggest Fitness Myths of All Time</div>
+                <div class="date"> 8 May 2023</div>
+            </div>
+        </div>
+    </div>
+    <!-- footer tag -->
+  
+    <div class="desk-footer__right">
+        <div class="desk-footer__footer">
+            <hr>
+            <p>All MuscleBlaze products are manufactured at FSSAI approved manufacturing facilities and are not intended
+                to diagnose, treat, cure, or prevent any disease.</p>
+        </div>
+    </div>
+</body>
+
+</html>
